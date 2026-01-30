@@ -16,7 +16,7 @@ export default function ProjectCard({ title, subtitle, image, video, badge, stat
         <article className='project-card flex flex-col gap-20 pointer'>
             {video ? (
                 <div className='ratio-453-558 pos-rel'>
-                    <video onCanPlay={e => e.target.play()} className='bg-image radius-5' src={video} autoPlay muted loop playsInline preload='auto' />
+                    <video className='bg-image radius-5' src={video} autoPlay muted loop playsInline />
                     <img className='absolute-center' src={image} alt={title} />
                     <Overlays />
                 </div>
