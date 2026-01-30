@@ -3,14 +3,15 @@
 --------------------------------------------------------------*/
 
 body {
-  color: #000;
-  font-size: 14px;
-  font-family: sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-smooth: always;
-  text-rendering: optimizeLegibility;
-  ::selection {
-    background: #d2fd78;
-    color: #000;
-  }
+    font-size: 14px;
+    color: rgba(79, 79, 79, 1);
+    -webkit-font-smoothing: antialiased;
+    background-color: rgba(248, 248, 248, 1);
+    font-family: "Suisse Intl", sans-serif;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    ::selection {
+        background: #d2fd78;
+        color: #000;
+    }
 }

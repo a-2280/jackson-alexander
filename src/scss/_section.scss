@@ -1,0 +1,56 @@
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.subgrid {
+    display: grid;
+    row-gap: 100px;
+    font-size: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    color: rgba(79, 79, 79, 0.6);
+    font-weight: 400;
+    line-height: 130%;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.subgrid ul {
+    list-style: none;
+}
+
+.subgrid h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(79, 79, 79, 1);
+    line-height: 130%;
+
+    @media (max-width: 768px) {
+        padding-top: 20px;
+    }
+}
+
+@keyframes testimonial-fade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial-content {
+    animation: testimonial-fade 0.35s ease-out;
+}

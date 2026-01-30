@@ -1,0 +1,14 @@
+.project-card .absolute,
+.project-card .text-grey {
+    opacity: 0;
+    transition: 0.3s ease opacity;
+
+    @media (max-width: 768px) {
+        opacity: 1;
+    }
+}
+
+.project-card:hover .absolute,
+.project-card:hover .text-grey {
+    opacity: 1;
+}

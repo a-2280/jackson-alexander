@@ -1,0 +1,44 @@
+.text-footer {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-footer,
+.text-footer input::placeholder,
+.text-footer input {
+    color: rgba(248, 248, 248, 1);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.text-footer input {
+    height: 25px;
+    opacity: 1;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.text-footer input::placeholder {
+    opacity: 0.4;
+}
+
+.text-footer ul {
+    list-style: none;
+}
+
+.jaco {
+    font-size: 87px;
+    font-weight: 500;
+    line-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 768px) {
+        padding-top: 50px;
+    }
+}

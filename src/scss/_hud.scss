@@ -1,0 +1,28 @@
+.hud {
+    bottom: 0;
+    padding: 20px;
+    position: fixed;
+    justify-content: space-between;
+    transition: opacity 0.4s ease;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+
+    &.hud-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .bg-frost {
+        animation: hudFadeIn 0.4s ease;
+    }
+}
+
+@keyframes hudFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

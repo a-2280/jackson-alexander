@@ -3,211 +3,559 @@
 --------------------------------------------------------------*/
 
 a {
-  color: inherit;
+    color: inherit;
 }
 
 .link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .overflow {
-  overflow: hidden;
+    overflow: hidden;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.default {
+    cursor: default;
+}
+
+/* ------------ Border Styles ------------ */
+
+.radius-5 {
+    border-radius: 5px;
+}
+
+.radius-10 {
+    border-radius: 10px;
+}
+
+.radius-13 {
+    border-radius: 13px;
 }
 
 /* ------------ Grid Styles ------------ */
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-gap-80 {
+    gap: 80px 20px;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-3 {
+    grid-column: span 3;
 }
 
 /* ------------ Flex Styles ------------ */
 
 .flex {
-  display: flex;
+    display: flex;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .flex-col {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .align-center {
-  align-items: center;
+    align-items: center;
+}
+
+.align-end {
+    align-items: end;
 }
 
 .justify-center {
-  justify-content: center;
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
 }
 
 .space-between {
-  justify-content: space-between;
+    justify-content: space-between;
+}
+
+.grow-1 {
+    flex-grow: 1;
 }
 
 /* ------------ Gap Styles ------------ */
 
+.gap-2 {
+    gap: 2px;
+}
+
+.gap-3 {
+    gap: 3px;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
 .gap-20 {
-  gap: 20px;
+    gap: 20px;
 }
 
 .gap-40 {
-  gap: 40px;
+    gap: 40px;
+}
+
+.gap-90 {
+    gap: 90px;
 }
 
 /* ------------ Margin Styles ------------ */
 
 .m0 {
-  margin: 0px;
+    margin: 0px;
+}
+
+.m20 {
+    margin: 20px;
+}
+
+.mt80 {
+    margin-top: 80px;
+}
+
+.mb60 {
+    margin-bottom: 60px;
 }
 
 .ma {
-  margin: auto;
+    margin: auto;
 }
 
 .mla {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .mra {
-  margin-right: auto;
+    margin-right: auto;
 }
 
 .mta {
-  margin-top: auto;
+    margin-top: auto;
 }
 
 .mba {
-  margin-bottom: auto;
+    margin-bottom: auto;
 }
 
 /* ------------ Padding Styles ------------ */
 
 .p0 {
-  padding: 0px;
+    padding: 0px;
+}
+
+.p3 {
+    padding: 3px;
+}
+
+.p10 {
+    padding: 10px;
 }
 
 .p20 {
-  padding: 20px;
+    padding: 20px;
 }
 
 .p40 {
-  padding: 40px;
+    padding: 40px;
+}
+
+.pb0 {
+    padding-bottom: 0;
+}
+
+.pb40 {
+    padding-bottom: 40px;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pt35 {
+    padding-top: 35px;
 }
 
 /* ------------ Position Styles ------------ */
 
 .pos-rel {
-  position: relative;
+    position: relative;
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+}
+
+.absolute-center {
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.top-left {
+    left: 0;
+}
+
+.top-right {
+    right: 0;
 }
 
 /* ------------ Z-Index Styles ------------ */
 
 .z-2 {
-  z-index: 2;
+    z-index: 2;
 }
 
 /* ------------ BG Styles ------------ */
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}
 
 .bg-grey {
-  background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(83, 83, 83, 0.5);
+}
+
+.bg-black {
+    background-color: rgba(21, 21, 21, 1);
+}
+
+.bg-frost {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 /* ------------ Image Styles ------------ */
 
 div.bg-image,
 .bg-image {
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    top: 0px;
 }
 
 /* ------------ Spacer Styles ------------ */
 
 .spacer {
-  height: 100px;
+    height: 100px;
 }
 
 /* ------------ Ratio Styles ------------ */
 
 .ratio-1-2 {
-  width: 100%;
-  aspect-ratio: 1 / 2;
+    width: 100%;
+    aspect-ratio: 1 / 2;
 }
 
-.ratio-2-1 {
-  width: 100%;
-  aspect-ratio: 2 / 1;
+.ratio-1 {
+    aspect-ratio: 1;
+}
+
+.ratio-1920-1080 {
+    width: 100%;
+    aspect-ratio: 1920 / 1080;
+}
+
+.ratio-453-558 {
+    width: 100%;
+    aspect-ratio: 453 / 558;
 }
 
 /* ------------ Width Styles ------------ */
 
 .w-50 {
-  width: 50%;
+    width: 50%;
 }
 
 .w-100 {
-  width: 100%;
+    width: 100%;
+}
+
+.w-100vw {
+    width: 100vw;
+}
+
+.w-30px {
+    width: 30px;
+}
+
+.w-40px {
+    width: 40px;
+}
+
+.w-45px {
+    width: 45px;
+}
+
+.w-220px {
+    width: 220px;
+}
+
+.w-fit {
+    width: fit-content;
 }
 
 /* ------------ Height Styles ------------ */
 
 .h-100 {
-  height: 100%;
+    height: 100%;
+}
+
+.h-50vh {
+    height: 50vh;
+}
+
+.h-85vh {
+    height: 85vh;
 }
 
 .h-100vh {
-  height: 100vh;
+    height: 100vh;
+}
+
+.h-30px {
+    height: 30px;
+}
+
+.h-40px {
+    height: 40px;
+}
+
+.h-150px {
+    height: 150px;
+}
+
+.h-fit {
+    height: fit-content;
 }
 
 /* ------------ Max Styles ------------ */
 
 .max-1600 {
-  max-width: 1600px;
+    max-width: 1600px;
+}
+
+.max-750 {
+    max-width: 800px;
+}
+
+/* ------------ Typography ------------ */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.text-10 {
+    font-size: 10px;
+    line-height: 100%;
+    font-weight: 450;
+}
+
+.text-14 {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.text-20 {
+    font-weight: 500;
+    line-height: 100%;
+    font-size: 20px;
+}
+
+.text-30 {
+    font-size: 30px;
+    line-height: 110%;
+    font-weight: 400;
+}
+
+.text-black {
+    color: rgba(79, 79, 79, 1);
+}
+
+.text-white {
+    color: rgba(255, 255, 255, 1);
+}
+
+.text-grey {
+    color: rgba(79, 79, 79, 0.3);
+}
+
+.text-inverted {
+    color: rgba(255, 255, 255, 1);
+    mix-blend-mode: difference;
+}
+
+.opacity-4 {
+    opacity: 0.4;
+}
+
+/* ------------ Animation Styles ------------ */
+
+.fade-in {
+    opacity: 0;
+    transition: 0.65s ease opacity;
+    &.sal-animate {
+        opacity: 1;
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    transition: opacity 0.65s ease, transform 1s ease !important;
+    transform: translateY(20px);
+
+    &.sal-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay1 {
+    transition-delay: 0.1s;
+}
+
+.delay2 {
+    transition-delay: 0.2s;
+}
+
+.delay3 {
+    transition-delay: 0.3s;
+}
+
+.delay5 {
+    transition-delay: 0.5s;
 }
 
 /* ------------ Mobile Styles ------------ */
 
 .m-hide {
-  @media (max-width: 768px) {
-    display: none;
-  }
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .m-show {
-  display: none;
-  @media (max-width: 768px) {
-    display: inherit;
-  }
+    display: none;
+    @media (max-width: 768px) {
+        display: inherit;
+    }
 }
 
 .m-wrap {
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-  }
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
 }
 
 .m-100 {
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.m-text-20 {
+    @media (max-width: 768px) {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+    }
+}
+
+.m-text-25 {
+    @media (max-width: 768px) {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 100%;
+    }
+}
+
+.m-h-40px {
+    @media (max-width: 768px) {
+        height: 40px;
+    }
+}
+
+.m-h-60vh {
+    @media (max-width: 768px) {
+        height: 60vh;
+    }
+}
+
+.m-w-100 {
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.m-space-evenly {
+    @media (max-width: 768px) {
+        justify-content: space-evenly;
+    }
+}
+
+.m-flex {
+    @media (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.m-flex-col {
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.m-gap-30 {
+    @media (max-width: 768px) {
+        gap: 30px;
+    }
 }
